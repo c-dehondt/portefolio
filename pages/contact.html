@@ -1,0 +1,202 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+
+        <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
+    </head>
+
+    <body>
+      <header>
+        <nav id="nav" class="navbar navbar-inverse bg-inverse navbar-toggleable-md navbar-light bg-faded">
+          <h1 id="titre" class="navbar-brand">Street <br>forme</h1>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/tarif.html">Tarif</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nos Coach</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Paul</a>
+                <a class="dropdown-item" href="#">chris</a>
+                <a class="dropdown-item" href="#">Nadine</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+      <main id="contact">
+        <div class="contact-us">
+     <div class="container">
+        <div class="contact-form">
+         <div class="row">
+             <div class="col-sm-7">
+                  <form id="ajax-contact"  method="post" action="contact-form-mail.php" role="form">
+                      <div class="messages" id="form-messages"></div>
+                      <div class="controls">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_name">Nom *</label>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_lastname">Prénom *</label>
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_email">Email *</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_phone">téléphone*</label>
+                                      <input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+  onchange="try{setCustomValidity('')}catch(e){}">
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label for="form_message">Message *</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input type="submit" class="btn btn-black" value="Send message">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                 <br>
+                                  <small class="text-muted"><strong>*</strong> These fields are required.</small>
+                              </div>
+                          </div>
+                      </div>
+
+                  </form>
+
+             </div>
+             <div class="col-sm-5">
+                 <div class="row col1">
+                     <div class="col-xs-3">
+                         <i class="fa fa-map-marker" style="font-size:16px;"></i>   Adresse
+                     </div>
+                     <div class="col-xs-9">
+                          21/23 rue Maracci,<br> 59800 lille
+                     </div>
+                 </div>
+
+                  <div class="row col1">
+                      <div class="col-sm-3">
+                          <i class="fa fa-phone"></i>   Phone
+                      </div>
+                      <div class="col-sm-9">
+                           06 84 22 05 33
+                      </div>
+                  </div>
+                  <div class="row col1">
+                      <div class="col-sm-3">
+                           <i class="fa fa-fax"></i>    Fax
+                      </div>
+                      <div class="col-sm-9">
+                            03 22 55 66 99
+                      </div>
+                  </div>
+                  <div class="row col1">
+                      <div class="col-sm-3">
+                          <i class="fa fa-envelope"></i>   Email
+                      </div>
+                      <div class="col-sm-9">
+                           <a href="mailto:info@yourdomain.com">c.dehondt@live.com</a> <br> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+                      </div>
+                  </div><br>
+                  <iframe class="plan" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2528.4632885159413!2d3.191529787905811!3d50.67422491464251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47c3287cffc4751f%3A0x5a28c76910a7ac19!2sRue+L%C3%A9on+Marlot%2C+59100+Roubaix!3m2!1d50.6745666!2d3.1917399!5e0!3m2!1sfr!2sfr!4v1490867155914" width="100%" height="350" style="border:0" allowfullscreen></iframe>
+             </div>
+         </div>
+
+        </div>
+     </div>
+ </div>
+
+
+       </main>
+       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+       <footer>
+           <div class="footer" id="footer">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
+                           <h3> Tarifs </h3>
+                           <ul>
+                               <li> <a href="#">Abonnement 12 mois</a> </li>
+                               <li> <a href="#">Abonnement 6 mois</a> </li>
+                               <li> <a href="#">Abonnement 3 mois</a> </li>
+                               <li> <a href="#">Abonnement 1 mois</a> </li>
+                           </ul>
+                       </div>
+                       <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
+                           <h3> coach</h3>
+                           <ul>
+                               <li> <a href="#">Paul</a> </li>
+                               <li> <a href="#">Chris</a> </li>
+                               <li> <a href="#">Nadine</a> </li>
+                           </ul>
+                       </div>
+                       <div class="col-lg-4  col-md-3 col-sm-6 col-xs-12 ">
+                           <h3>Contact</h3>
+                           <ul>
+                               <li>
+                                   <div class="input-append newsletter-box text-center">
+                                       <input type="text" class="full text-center" placeholder="Email ">
+                                       <button class="btn  bg-gray" type="button"> je vous réponds<i class="fa fa-long-arrow-right"> </i> </button>
+                                   </div>
+                               </li>
+                           </ul>
+                           <ul class="social">
+                               <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                               <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                               <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                               <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                               <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                           </ul>
+                       </div>
+                   </div>
+                   <!--/.row-->
+               </div>
+               <!--/.container-->
+    </body>
+    </html>
